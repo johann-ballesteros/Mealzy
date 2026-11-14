@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+
+    <!-- Login Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#E3FFA0"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="12dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="20dp">
+
+
+            <!-- Salad Logo -->
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/salad"
+                android:scaleType="fitCenter"
+                android:contentDescription="Salad Logo"/>
+
+
+            <!-- Welcome Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login to Mealzy"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#111111"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="35dp"/>
+
+
+            <!-- Email Field -->
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_login_input"
+                android:drawableStart="@android:drawable/ic_menu_myplaces"
+                android:drawablePadding="12dp"
+                android:hint="Email"
+                android:textSize="14sp"
+                android:textColor="#222222"
+                android:textColorHint="#999999"
+                android:padding="10dp"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"/>
+
+
+            <!-- Password Field -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/bg_login_input"
+                android:drawableStart="@android:drawable/ic_lock_lock"
+                android:drawablePadding="12dp"
+                android:hint="Password"
+                android:textSize="14sp"
+                android:textColor="#222222"
+                android:textColorHint="#999999"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:singleLine="true"/>
+
+
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="115dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="35dp"
+                android:text="Login"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4F7942"/>
+
+
+            <!-- Register Text -->
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Don't have an account yet? →"
+                android:textSize="15sp"
+                android:textColor="#718C43"
+                android:clickable="true"
+                android:focusable="true"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
